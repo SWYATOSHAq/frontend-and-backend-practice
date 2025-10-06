@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои работы - Охотников Святослав </title>
+    <meta name="vievport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Охотников Святослав</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style/index_style.css">
+    <link rel="stylesheet" href="../style/index_style.css">
+    <link rel="icon" href="../images/hacker.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <div id="header">Мои работы</div>
-
         <div id="menu">
             <ul>
                 <li><a href="#" class="active">Главная</a></li>
@@ -22,38 +22,49 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
+        <div id="content">
+            <div class="skills-section">
+                <h3 class="section-title">Мои работы</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        <h4>Система учёта клиентов для малого бизнеса</h4>
+                        <p>ссылка на гитхаб(потом добавлю)</p>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        <h4>Календарь с динамическими заметками</h4>
+                        <p>ссылка на гитхаб(потом добавлю)</p>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        <h4>этот сайт)</h4>
+                        <p>посмотри его)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer-content">
+                <h3>Заинтересованы в сотрудничестве?</h3>
+                <p>Я открыт для предложений о работе и готов внести вклад в интересные проекты</p>
+                <a href="https://t.me/swyatoshaa" class="tg-link cta-button" target="_blank">
+                        <i class="fab fa-telegram"></i> Связаться в Telegram
+                    </a>
+                <p>© 2023 Охотников Святослав. Все права защищены.</p>
+                <img src="/images/моя печать.png" width="200" />
+            </div>
+        </div>
 
     </div>
-
-    <script>
-        // Простой JavaScript для интерактивности
-        document.addEventListener('DOMContentLoaded', function () {
-            const ctaButton = document.querySelector('.cta-button');
-            if (ctaButton) {
-                ctaButton.addEventListener('click', function () {
-                    alert('Спасибо за проявленный интерес! Свяжитесь со мной через Telegram: @swyatoshaa');
-                });
-            }
-
-            // Плавная прокрутка для навигационных ссылок
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') {
-                        window.scrollTo({
-                            top: 0,
-                            behavior: 'smooth'
-                        });
-                    } else if (document.querySelector(targetId)) {
-                        document.querySelector(targetId).scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 </body>
+
 
 </html>
